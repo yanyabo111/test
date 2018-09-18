@@ -1,0 +1,16 @@
+- content_for(:content) do
+  .hottest.container{style: "padding-top: 10px; padding-bottom: 10px"}
+    %h3.row= @movie.name
+  .container
+    .col-md-3
+      %img{src: "#{@movie.cover}"} 
+    .col-md-9
+      %ul
+        %li= @movie.name
+        %li= @movie.publish
+        %li= @movie.rate
+  .container
+    %h4.row 下载地址
+    %ul
+      - @movie.downloads.each do |d|
+        %li= d.url

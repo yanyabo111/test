@@ -1,0 +1,9 @@
+- content_for(:content) do
+  .hottest.container{style: "padding-top: 10px; padding-bottom: 10px"}
+    %h3.row 热播电影
+    - @hottest_movies.each do |movie|
+      .col-md-2.col-xs-6
+        %a{href: "#{movie_detail_url(id: movie.id)}"}
+          .img-container{style: "width: 100%; height: 220px; overflow: hidden"}
+            %img{src: "#{movie.cover}", style:"width: 100%"}
+          .hot-title{style: "white-space:nowrap; text-overflow:ellipsis;overflow:hidden; margin-bottom: 10px"}= movie.name

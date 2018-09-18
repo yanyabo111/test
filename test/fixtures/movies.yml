@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  publish: 2018-09-18
+  cover: MyString
+  english_name: MyString
+  rate: 1
+
+two:
+  name: MyString
+  publish: 2018-09-18
+  cover: MyString
+  english_name: MyString
+  rate: 1
